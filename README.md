@@ -6,8 +6,6 @@ Hands-on experimentation and in-depth exploration of proprietary libraries to op
 
 ## 📸 Interface (Example)
 
-> Main editor window (Dark Mode enabled) displaying a spreadsheet with action buttons.
-
 ![screenshot](./public/Interface_example.png)  
 
 ---
