@@ -2,6 +2,16 @@
 
 Hands-on experimentation and in-depth exploration of proprietary libraries to optimize project workflows, enhance branching strategies, and increase version control efficiency, aiming to streamline development and project management processes.
 
+---
+
+## 📸 Interface (Example)
+
+> Main editor window (Dark Mode enabled) displaying a spreadsheet with action buttons.
+
+![screenshot](./public/Interface_example.png)  
+
+---
+
 ## Dependencies
 
 - [joint/core](https://www.jointjs.com/)
@@ -30,6 +40,8 @@ typescript@~5.7.2  # https://www.typescriptlang.org/
 typescript-eslint@^8.24.1  # https://www.npmjs.com/package/typescript-eslint
 vite@^6.2.0  # https://vitejs.dev/ -->
 
+---
+
 ## 🛠️ Installation
 
 1.  Clone this repository:
@@ -43,6 +55,8 @@ vite@^6.2.0  # https://vitejs.dev/ -->
     npm i
 ```
 
+---
+
 ## ▶️ How to Run
 
 1. Ensure all dependencies are installed.
@@ -51,6 +65,8 @@ vite@^6.2.0  # https://vitejs.dev/ -->
     npm run dev
 ```
 3. Access http://localhost:5173/
+
+---
 
 ## 📂 Code Structure**
 
@@ -63,10 +79,14 @@ vite@^6.2.0  # https://vitejs.dev/ -->
 - **react-flow.tsx**  
       More complex ECU customization that was created with Raect Flow.
 
+---
+
 ## 🔧 Configuration and Customization
 
 - **Data Adjustment**  
       In both codes (joint.jsx, react flow.tsx), there is the constant "data" which is written the data and hierarchy of the ECUs.
+
+---
 
 ## 📈 Future Improvements
 - Interactive visualizations with advanced animations.
