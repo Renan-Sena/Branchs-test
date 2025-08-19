@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useEffect, useRef } from "react";
 import * as joint from "jointjs";
 
@@ -7,18 +6,18 @@ const VersionDiagram: React.FC = () => {
 
   useEffect(() => {
     const graph = new joint.dia.Graph();
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const paper = new joint.dia.Paper({
-      el: graphRef.current!,
+      el: graphRef.current,
       model: graph,
-      width: 1000,
-      height: 500,
-      gridSize: 10,
+      width: 800,
+      height: 450,
+      gridSize: 1,
       drawGrid: true,
-      interactive: false,
     });
 
     // Define the version hierarchy
-    const versionTree: Record<string, string[]> = {
+    const data: Record<string, string[]> = {
       "1.0": ["1.1", "1.2"],
       "1.1": [],
       "1.2": ["1.2.1", "1.2.2", "1.2.3"],
@@ -42,7 +41,7 @@ const VersionDiagram: React.FC = () => {
     // Recursive function to set positions
     const positionNodes = (version: string, x: number, y: number) => {
       nodePositions[version] = { x, y };
-      const children = versionTree[version];
+      const children = data[version];
       const numChildren = children.length;
       
       let offset = -(numChildren - 1) * verticalSpacing / 2;
@@ -71,7 +70,7 @@ const VersionDiagram: React.FC = () => {
     });
 
     // Function to create orthogonal links
-    Object.entries(versionTree).forEach(([parent, children]) => {
+    Object.entries(data).forEach(([parent, children]) => {
       children.forEach((child) => {
         new joint.shapes.standard.Link({
           source: { id: nodes[parent].id },
@@ -86,7 +85,7 @@ const VersionDiagram: React.FC = () => {
     });
   }, []);
 
-  return <div ref={graphRef} style={{ border: "1px solid black" }}></div>;
+  return <div ref={graphRef} style={{ border: "0px solid black" }}></div>;
 };
 
 export default VersionDiagram;

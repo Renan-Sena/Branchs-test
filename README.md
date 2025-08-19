@@ -1,54 +1,77 @@
-# React + TypeScript + Vite
+# BRANCHS AND VERSIONING TESTS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hands-on experimentation and in-depth exploration of proprietary libraries to optimize project workflows, enhance branching strategies, and increase version control efficiency, aiming to streamline development and project management processes.
 
-Currently, two official plugins are available:
+## Dependencies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [joint/core](https://www.jointjs.com/)
+- [react-flow](https://reactflow.dev/)
+- [dagre](https://github.com/dagrejs/dagre)
+- [graphlib](https://github.com/dagrejs/graphlib)
+- [jointjs](https://www.jointjs.com/)
+- [react](https://reactjs.org/)
+<!-- - [gojs@](https://gojs.net/) -->
+<!-- - [gojs-react@](https://github.com/NorthwoodsSoftware/gojs-react) -->
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<!-- ### Development
+@eslint/js@^9.21.0  # https://eslint.org/
+@types/dagre@^0.7.52  # https://www.npmjs.com/package/@types/dagre
+@types/graphlib@^2.1.12  # https://www.npmjs.com/package/@types/graphlib
+@types/jointjs@^2.0.0  # https://www.npmjs.com/package/@types/jointjs
+@types/react@^19.0.12  # https://www.npmjs.com/package/@types/react
+@types/react-dom@^19.0.4  # https://www.npmjs.com/package/@types/react-dom
+@vitejs/plugin-react@^4.3.4  # https://www.npmjs.com/package/@vitejs/plugin-react
+eslint@^9.21.0  # https://eslint.org/
+eslint-plugin-react-hooks@^5.1.0  # https://www.npmjs.com/package/eslint-plugin-react-hooks
+eslint-plugin-react-refresh@^0.4.19  # https://www.npmjs.com/package/eslint-plugin-react-refresh
+globals@^15.15.0  # https://www.npmjs.com/package/globals
+typescript@~5.7.2  # https://www.typescriptlang.org/
+typescript-eslint@^8.24.1  # https://www.npmjs.com/package/typescript-eslint
+vite@^6.2.0  # https://vitejs.dev/ -->
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Installation
+
+1.  Clone this repository:
+
+```
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. install required packages.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
 ```
+    npm i
+```
+
+## ▶️ How to Run
+
+1. Ensure all dependencies are installed.
+2. Run in the Terminal.
+```
+    npm run dev
+```
+3. Access http://localhost:5173/
+
+## 📂 Code Structure**
+
+- **index.tsx**  
+      Customization of ECUs in general.
+
+- **joints.tsx**  
+      More complex ECU customization that was created with Joint.
+
+- **react-flow.tsx**  
+      More complex ECU customization that was created with Raect Flow.
+
+## 🔧 Configuration and Customization
+
+- **Data Adjustment**  
+      In both codes (joint.jsx, react flow.tsx), there is the constant "data" which is written the data and hierarchy of the ECUs.
+
+## 📈 Future Improvements
+- Interactive visualizations with advanced animations.
+- Real-time collaboration and multi-user support.
+- Export options for diagrams and data.
+- Enhanced accessibility and keyboard navigation.
+- Customizable themes and layouts.
+- Add more technologies.

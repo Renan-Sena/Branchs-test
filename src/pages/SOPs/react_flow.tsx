@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import React, { memo, useState, useEffect } from 'react';
+import { memo, useState, useEffect } from 'react';
 import {
   Background,
   Controls,
@@ -8,8 +7,6 @@ import {
   Position,
   ReactFlow,
   ReactFlowProvider,
-  useNodesState,
-  useEdgesState,
   Node,
   Edge,
 } from '@xyflow/react';
@@ -174,9 +171,9 @@ const SOPBranchTree = () => {
     <div style={{ width: '100%', height: '100vh' }}>
       <ReactFlowProvider>
         <ReactFlow nodeTypes={{ step: CustomNode }} nodes={nodes} edges={edges} nodesDraggable={false} zoomOnScroll={false} zoomOnPinch={false} zoomOnDoubleClick={false} panOnScroll={false} panOnDrag={false} fitView>
-          {/* <MiniMap />
+          <MiniMap />
           <Controls />
-          <Background /> */}
+          <Background />
         </ReactFlow>
       </ReactFlowProvider>
     </div>
