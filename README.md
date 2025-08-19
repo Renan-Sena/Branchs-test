@@ -6,7 +6,7 @@ Hands-on experimentation and in-depth exploration of proprietary libraries to op
 
 ## 📸 Interface (Example)
 
-![screenshot](./public/interface_example.png)  
+![screenshot](./public/Interface_example.png)  
 
 ---
 
